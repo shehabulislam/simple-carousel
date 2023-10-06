@@ -1,0 +1,44 @@
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 600px; /* Adjust the width as needed */
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 200px; /* Adjust the slide width as needed */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #f0f0f0;
+  margin-right: 10px; /* Adjust the margin between slides as needed */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav svg {
+  fill: #fff;
+}
+
+.nav button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
